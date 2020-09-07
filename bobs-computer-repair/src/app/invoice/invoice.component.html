@@ -1,0 +1,42 @@
+<!-- Dialog -->
+<div class="container">
+    <h2 mat-dialog-title>Invoice</h2>
+    <!-- dialog content -->
+    <mat-dialog-content class="invoiceStyle">
+      <h4>{{ order.password.name }}</h4>
+      <p>{{ order.password.price | currency }}</p>
+
+      <h4>{{ order.spyware.name }}</h4>
+      <p>{{ order.spyware.price | currency }}</p>
+
+      <h4>{{ order.memory.name }}</h4>
+      <p>{{ order.memory.price | currency }}</p>
+
+      <h4>{{ order.software.name }}</h4>
+      <p>{{ order.software.price | currency }}</p>
+
+      <h4>{{ order.tuneUp.name }}</h4>
+      <p>{{ order.tuneUp.price | currency }}</p>
+
+      <h4>{{ order.cleanUp.name }}</h4>
+      <p>{{ order.cleanUp.price | currency }}</p>
+
+      <h4>{{ order.keyboard.name }}</h4>
+      <p>{{ order.keyboard.price | currency }}</p>
+
+      <h4>{{ order.labor.name }}</h4>
+      <p>{{ order.labor.price | currency }}</p>
+
+      <h4>{{ order.parts.name }}</h4>
+      <p>{{ order.parts.info }}</p>
+      <br />
+      <hr />
+      <h4>{{ order.total.name }}</h4>
+      <p>{{ order.total.price | currency }}</p>
+    </mat-dialog-content>
+    
+    <!-- dialog button -->
+    <mat-dialog-actions>
+      <button mat-raised-button color="warn" (click)="close()">Close</button>
+    </mat-dialog-actions>
+  </div>
